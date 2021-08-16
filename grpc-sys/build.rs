@@ -298,6 +298,6 @@ fn main() {
         cc.define("_WIN32_WINNT", Some("0x0700"));
     }
 
-    cc.warnings_into_errors(true);
+    cc.warnings_into_errors(false);
     cc.compile("libgrpc_wrap.a");
 }
